@@ -32,8 +32,7 @@ public class UserController {
             @RequestParam(value = "status",defaultValue = "-1") int status,
             @RequestParam(value = "searchValue",defaultValue = "") String searchValue
     ) {
-//        QueryWrapper<Object> query = Wrappers.query();
-//        query.eq("username", searchValue);
+
 
         Page<User> page = new Page<>(pageIndex,pageSize);
         LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();

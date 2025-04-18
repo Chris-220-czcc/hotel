@@ -13,11 +13,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 /**
- * @Description 酒店预订信息表
- * @Company: 西安欧鹏
- * @Author: 姚臣伟
- * @Version: 1.0
- * @Date: 2023/7/5
+ * 酒店预订信息表
  */
 @Data
 @AllArgsConstructor

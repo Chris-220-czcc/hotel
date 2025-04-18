@@ -1,17 +1,15 @@
 package com.cwj.hotel.service.impl;
+
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.cwj.hotel.entity.HotelFloor;
 import com.cwj.hotel.mapper.HotelFloorMapper;
 import com.cwj.hotel.service.HotelFloorService;
 import com.cwj.hotel.vo.MQFloorVo;
-import io.swagger.v3.oas.annotations.headers.Header;
 import jakarta.annotation.Resource;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
-import org.apache.rocketmq.spring.support.RocketMQHeaders;
 import org.springframework.messaging.Message;
-import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 

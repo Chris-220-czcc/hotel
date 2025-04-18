@@ -1,16 +1,13 @@
 package com.cwj.hotel.filter;
 
-import java.io.IOException;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
-
 import com.cwj.hotel.entity.User;
 import com.cwj.hotel.utils.HutoolJWTUtil;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
+
+import java.io.IOException;
 
 @Component
 public class AuthFilter implements Filter {

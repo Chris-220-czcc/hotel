@@ -1,6 +1,5 @@
 package com.cwj.hotel.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cwj.hotel.entity.HotelFloor;
@@ -16,13 +15,9 @@ import com.cwj.hotel.utils.Result;
 import com.cwj.hotel.vo.FloorVo;
 import com.cwj.hotel.vo.MQFloorVo;
 import com.cwj.hotel.vo.RoomTypeVo;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.minio.MinioClient;
 import jakarta.annotation.Resource;
-//import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
-
-
 import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.util.StringUtils;

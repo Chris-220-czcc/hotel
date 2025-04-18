@@ -1,13 +1,9 @@
 package com.cwj.hotel.controller;
 
-import cn.hutool.jwt.JWTUtil;
-import com.alibaba.nacos.shaded.com.google.gson.Gson;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cwj.hotel.entity.HotelRoomType;
-import com.cwj.hotel.entity.Student;
 import com.cwj.hotel.service.RoomTypeService;
-import com.cwj.hotel.utils.HutoolJWTUtil;
 import com.cwj.hotel.utils.PageUtil;
 import com.cwj.hotel.utils.RedisUtil;
 import com.cwj.hotel.utils.Result;
@@ -16,27 +12,13 @@ import com.cwj.hotel.vo.RoomTypeWithTokenVo;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mysql.cj.xdevapi.JsonArray;
-import com.mysql.cj.xdevapi.JsonValue;
-import io.swagger.v3.core.util.Json;
 import jakarta.annotation.Resource;
-import jakarta.servlet.http.HttpSession;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.util.StringUtils;
-import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
-import java.io.Reader;
-import java.io.StringReader;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.util.ArrayList;
 import java.util.List;
 

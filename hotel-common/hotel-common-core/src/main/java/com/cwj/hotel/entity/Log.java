@@ -12,13 +12,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
- * @Description 系统日志实体类
- * @Company: 西安欧鹏
- * @Author: 姚臣伟
- * @Version: 1.0
- * @Date: 2023/7/5
- */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -3,7 +3,6 @@ package com.cwj.hotel.controller;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-
 import com.cwj.hotel.entity.HotelFloor;
 import com.cwj.hotel.service.HotelFloorService;
 import com.cwj.hotel.utils.Cache;
@@ -13,7 +12,6 @@ import com.cwj.hotel.vo.FloorVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
-import io.swagger.v3.oas.models.security.SecurityScheme;
 import jakarta.annotation.Resource;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.annotation.Validated;
@@ -21,7 +19,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Collectors;
 
 

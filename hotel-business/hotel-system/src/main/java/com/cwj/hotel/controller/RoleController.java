@@ -8,7 +8,6 @@ import com.cwj.hotel.service.RoleService;
 import com.cwj.hotel.utils.PageUtil;
 import com.cwj.hotel.utils.RedissonLock;
 import com.cwj.hotel.utils.Result;
-import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
 import org.redisson.api.RLock;
@@ -17,7 +16,6 @@ import org.springframework.util.StringUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Objects;
 
 

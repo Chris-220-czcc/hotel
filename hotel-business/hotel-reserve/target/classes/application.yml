@@ -1,0 +1,35 @@
+server:
+  port: 8060
+spring:
+  application:
+    name: hotel-reserve-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hotel_system_web?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=True
+    username: root
+    password: chen0220
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.237.129:8848
+        username: nacos
+        password: nacos
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+rocketmq:
+  name-server: 192.168.237.129:9876
+  producer:
+    group: hotelreservegroup
+knife4j:
+  enable: true
+  openapi:
+    title: hotel-reserve-service
+    group:
+      test1:
+        group-name: 测试1
+        api-rule: package
+        api-rule-resources:
+          - com.cwj.hotel.controller

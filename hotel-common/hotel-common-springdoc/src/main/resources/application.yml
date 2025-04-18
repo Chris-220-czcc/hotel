@@ -1,0 +1,21 @@
+springdoc:
+  swagger-ui:
+    enabled: true # 它只在开发阶段是true，生产阶段要改为false
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  group-configs:
+    - group: 'openlab'
+      paths-to-match: '/**'
+      packages-to-scan:
+        - com.openlab.hotel # 指定springdoc相关注解
+  default-flat-param-object: true
+
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+    swagger-model-name: 实体类列表

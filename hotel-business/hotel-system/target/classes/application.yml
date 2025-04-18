@@ -1,0 +1,25 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: hotel-system-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hotel_system_master?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=UTF-8&allowPublicKeyRetrieval=True
+    username: root
+    password: chen0220
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.237.129:8848
+        username: nacos
+        password: nacos
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+      table-prefix: sys_

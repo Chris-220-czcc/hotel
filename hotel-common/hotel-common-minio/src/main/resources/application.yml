@@ -1,0 +1,10 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+
+minio:
+  endpoint: http://192.168.237.129:9001
+  accessKey: 5Y14ZLL0CX12FHPHWL0Q
+  secretKey: +OE4y8tvP7C1X5lSYLRs0fJ1DJiN2V72o2tPR97O

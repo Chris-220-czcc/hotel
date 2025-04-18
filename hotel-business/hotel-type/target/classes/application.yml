@@ -1,0 +1,43 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: hotel-type-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hotel_system_web?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=True
+    username: root
+    password: chen0220
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.237.129:8848
+        username: nacos
+        password: nacos
+  data:
+    redis:
+      host: 192.168.237.129
+      port: 6379
+      #      数据库索引
+      database: 0
+      timeout: 10000
+      lettuce:
+        pool:
+          #连接池最大连接数（使用负值表示没有限制）
+          max-active: 20
+          #最大阻塞等待时间(负数表示没限制)
+          max-wait: -1
+          #连接池中的最大空闲连接
+          max-idle: 5
+          #连接池中的最小空闲连接
+          min-idle: 0
+      password: chen0220
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+rocketmq:
+  name-server: 192.168.237.129:9876
+  consumer:
+    group: roomtypegroup

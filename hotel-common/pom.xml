@@ -16,7 +16,7 @@
         <module>hotel-common-mybatis</module>
         <module>hotel-common-minio</module>
         <module>hotel-common-core</module>
-        <module>hotel-common-springdoc</module>
+
     </modules>
 
     <properties>

@@ -80,7 +80,7 @@ public class HotelFloorController {
     @DeleteMapping("/del/{id}")
     public Result<Object> delete(@PathVariable("id") Long id) {
         boolean flag = hotelFloorService.removeById(id);
-        return flag ? Result.ok().message("楼层删除成功！") : Result.fail().message("楼层删除失败！");
+        return flag ? Result.ok().message("楼层删除成功！") : Result.fail().message("楼层删除失败!!");
     }
 
 
